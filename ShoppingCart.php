@@ -137,7 +137,7 @@ if (isset($_POST["confirm_order"])) {
 
     <h1>Sepet İçeriği</h1>
     <?php if (!empty($_SESSION['cart'])): ?>
-    <form action="" method="POST">
+    <form action="ShoppingCart" method="POST">
             <table border="3">
                 <tr>
                     <th>Ürün Adı</th>

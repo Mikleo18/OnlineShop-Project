@@ -32,7 +32,7 @@ if (isset($_POST["admin"]))
   <body>
     <div class="container p-5">
         <div class="card p-5">
-            <form action="ilk.php" method="POST">
+            <form action="index.php" method="POST">
             <h1>Hoşgeldiniz</h1>
 
             <div class="col-md-12 text-center">
