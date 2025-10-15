@@ -3,10 +3,9 @@
 $host="localhost";
 $user = "root";
 $password ="";
-$vt="onlineshopuyelik";
+$vt="shop";
 
 $connectionlink=mysqli_connect($host,$user,$password,$vt);
-mysqli_set_charset($link,"UTF8");
-
+mysqli_set_charset($connectionlink,"utf8mb4");
 
 ?>

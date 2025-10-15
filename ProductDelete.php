@@ -33,7 +33,7 @@ if(isset($_POST["sil"]))
 
     if( isset($urunfiyati))
     {
-    $stmt = $link->prepare("CALL Urun_Silme(?)");
+    $stmt = $connectionlink->prepare("CALL Urun_Silme(?)");
     $stmt->execute([$urunfiyati]);
 
     if ($stmt) 
@@ -47,7 +47,7 @@ if(isset($_POST["sil"]))
     }
    
 
-    mysqli_close($link);
+    mysqli_close($connectionlink);
 
      }
 }
@@ -81,7 +81,7 @@ if(isset($_POST["sil"]))
   <body>
     <div class="container">
         
-            <form action="silme.php" method="POST" class="form-container">
+            <form action="ProductDelete.php" method="POST" class="form-container">
                
 
                 <div>

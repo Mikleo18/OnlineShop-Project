@@ -127,7 +127,7 @@ if(isset($_POST["ekle"]))
   <body>
     <div class="container">
         
-            <form action="adminpaneli2.php" method="POST" class="form-container">
+            <form action="ProductAdd.php" method="POST" class="form-container">
                 <div>
                     <label for="exampleInputEmail1" class="form-label">Ürün ismi:</label>
                     <input type="text" class="form-control       <?php 

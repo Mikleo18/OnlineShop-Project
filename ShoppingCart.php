@@ -95,7 +95,7 @@ if (isset($_POST["confirm_order"])) {
 <body>
 
 <div>
-    <form action="SDRVN.php" method="POST" class="form-container">
+    <form action="" method="POST" class="form-container">
         <?php 
         if(isset($_SESSION["username"]))
         {
@@ -117,7 +117,7 @@ if (isset($_POST["confirm_order"])) {
                 <th>Sepete Ekle</th>
             </tr>
             <?php
-            $sonuc = $link->query("SELECT * FROM urunler");
+            $sonuc = $connectionlink->query("SELECT * FROM urunler");
             if ($sonuc->num_rows > 0) {
                 while ($cek = $sonuc->fetch_assoc()) {
                     echo "<tr>
@@ -137,7 +137,7 @@ if (isset($_POST["confirm_order"])) {
 
     <h1>Sepet İçeriği</h1>
     <?php if (!empty($_SESSION['cart'])): ?>
-        <form action="SDRVN.php" method="POST">
+    <form action="" method="POST">
             <table border="3">
                 <tr>
                     <th>Ürün Adı</th>

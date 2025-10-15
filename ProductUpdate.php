@@ -119,7 +119,7 @@ if(isset($_POST["ekle"]))
   <body>
     <div class="container">
         
-            <form action="guncelleme.php" method="POST" class="form-container">
+            <form action="ProductUpdate.php" method="POST" class="form-container">
 
             <div>
                     <label for="exampleInputEmail1" class="form-label">Ürün Id:</label>

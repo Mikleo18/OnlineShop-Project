@@ -38,7 +38,7 @@ if(isset($_POST["giris"]))
     if(isset($username) && isset($parola))
     {
         $secim ="SELECT * FROM users WHERE username = '$username'";
-        $calistir =mysqli_query($connectionlink,$secim);
+        $calistir = mysqli_query($connectionlink,$secim);
         $kayittsayisi = mysqli_num_rows($calistir);
 
         if ($kayittsayisi>0) 
