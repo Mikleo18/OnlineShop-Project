@@ -83,7 +83,7 @@ if(isset($_POST["giris"]))
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Üye Giriş </title>
+    <title>Log In </title>
     <link rel="shortcut icon" type="x-icon" href="icons\loginicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -93,7 +93,7 @@ if(isset($_POST["giris"]))
         <div class="card p-5">
             <form action="Login.php" method="POST">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Kullanıcı Adı:</label>
+                    <label for="exampleInputEmail1" class="form-label">Username:</label>
                     <input type="text" class="form-control       <?php 
                     if (!empty($username_err))
                     {
@@ -110,7 +110,7 @@ if(isset($_POST["giris"]))
 
 
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Şifre:</label>
+                    <label for="exampleInputPassword1" class="form-label">Password:</label>
                     <input type="password" class="form-control       <?php 
                     if ( !empty($parola_err))
                     {
@@ -125,8 +125,8 @@ if(isset($_POST["giris"]))
                 </div>
 
 
-                <button type="submit" name= "giris" class="btn btn-primary">Giriş Yap</button>
-                <button type="submit" name= "geri" class="btn btn-primary">Geri Dön</button>
+                <button type="submit" name= "giris" class="btn btn-primary">Log In</button>
+                <button type="submit" name= "geri" class="btn btn-primary">Go Back</button>
             </form>
         </div>
     </div>

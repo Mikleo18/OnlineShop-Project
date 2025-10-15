@@ -129,7 +129,7 @@ if(isset($_POST["ekle"]))
         
             <form action="ProductAdd.php" method="POST" class="form-container">
                 <div>
-                    <label for="exampleInputEmail1" class="form-label">Ürün ismi:</label>
+                    <label for="exampleInputEmail1" class="form-label">Product Name:</label>
                     <input type="text" class="form-control       <?php 
                     if (!empty($urunismi_err))
                     {
@@ -145,7 +145,7 @@ if(isset($_POST["ekle"]))
                 </div>
 
                 <div>
-                    <label for="exampleInputEmail1" class="form-label">Ürün Fiyatı:</label>
+                    <label for="exampleInputEmail1" class="form-label">Product Price:</label>
                     <input type="number" class="form-control       <?php 
                     if (!empty($urunfiyati_err))
                     {
@@ -160,7 +160,7 @@ if(isset($_POST["ekle"]))
                 </div>
 
                 <div>
-                    <label for="exampleInputPassword1" class="form-label">Ürün Sayısı:</label>
+                    <label for="exampleInputPassword1" class="form-label">Product Quantity:</label>
                     <input type="number" class="form-control       <?php 
                     if ( !empty($urunsayisi_err))
                     {
@@ -174,8 +174,8 @@ if(isset($_POST["ekle"]))
                     </div>
                 </div>
 
-                <button type="submit" name= "ekle" class ="buttongreen">Ekle</button>
-                <button type="submit" name= "geri" class ="button button-red">Geri Dön</button>
+                <button type="submit" name= "ekle" class ="buttongreen">Add</button>
+                <button type="submit" name= "geri" class ="button button-red">Go Back</button>
             </form>
             <?php if($olmus): ?>
                 <div class="alert alert-success mt-3" role="alert">

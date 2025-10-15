@@ -1,6 +1,6 @@
 <?php
 session_start(); // Oturumu başlat
-$message="Sepet Boş";
+$message="Cart is empty";
 include("ConnectionLink.php");
 
 if(isset($_POST["geri"]))
@@ -99,7 +99,7 @@ if (isset($_POST["confirm_order"])) {
         <?php 
         if(isset($_SESSION["username"]))
         {
-          echo "<h3>".$_SESSION["username"]." Hoşgeldin </h3>";
+          echo "<h3>".$_SESSION["username"]." Welcome </h3>";
         }
         else
         {
@@ -107,14 +107,14 @@ if (isset($_POST["confirm_order"])) {
         }
         ?>
         
-    <button type="submit" name= "geri" class ="button button-red">Çıkış Yap</button>
+    <button type="submit" name= "geri" class ="button button-red">Log Out</button>
         <table border="3">
             <tr>
-                <th>Ürün id</th>
-                <th>Ürün Adı</th>
-                <th>Ürün Fiyatı</th>
-                <th>Ürün Sayısı</th>
-                <th>Sepete Ekle</th>
+                <th>Product id</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Quantity</th>
+                <th>Add Cart</th>
             </tr>
             <?php
             $sonuc = $connectionlink->query("SELECT * FROM urunler");
@@ -126,7 +126,7 @@ if (isset($_POST["confirm_order"])) {
                           <td>{$cek['urunfiyati']}</td>
                           <td>{$cek['urunsayisi']}</td>
                           <td>
-                              <button type='submit' class='buttongreen' name='satin' value='{$cek['urunid']}'>Sepete Ekle</button>
+                              <button type='submit' class='buttongreen' name='satin' value='{$cek['urunid']}'>Add to Cart</button>
                           </td>
                       </tr>";
                 }
@@ -135,16 +135,16 @@ if (isset($_POST["confirm_order"])) {
         </table>
     </form>
 
-    <h1>Sepet İçeriği</h1>
+    <h1>Shopping Cart</h1>
     <?php if (!empty($_SESSION['cart'])): ?>
     <form action="ShoppingCart" method="POST">
             <table border="3">
                 <tr>
-                    <th>Ürün Adı</th>
-                    <th>Ürün Fiyatı</th>
-                    <th>Miktar</th>
-                    <th>Toplam Fiyat</th>
-                    <th>Ürünü Kaldır</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Quantity</th>
+                    <th>Total Price</th>
+                    <th>Remove Product</th>
                 </tr>
                 <?php
                 $totalPrice = 0;
@@ -161,7 +161,7 @@ if (isset($_POST["confirm_order"])) {
                         <td><?php echo $quantity; ?></td>
                         <td><?php echo $totalProductPrice; ?></td>
                         <td>
-                            <button type='submit' name='remove_from_cart' class='button button-red' value='<?php echo $urunid; ?>'>Kaldır</button>
+                            <button type='submit' name='remove_from_cart' class='button button-red' value='<?php echo $urunid; ?>'>Remove</button>
                         </td>
                     </tr>
                 <?php endforeach; ?>
@@ -170,8 +170,8 @@ if (isset($_POST["confirm_order"])) {
                     <td colspan="2"><?php echo $totalPrice; ?></td>
                 </tr>
             </table>
-            <button type="submit" name="clear_cart" class="button button-red">Sepeti Temizle</button>
-            <button type="submit" name="confirm_order" class="button button-green">Siparişi Onayla</button>
+            <button type="submit" name="clear_cart" class="button button-red">Clear Cart</button>
+            <button type="submit" name="confirm_order" class="button button-green">Order</button>
         </form>
     <?php else: ?>
         <p>

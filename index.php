@@ -23,7 +23,7 @@ if (isset($_POST["admin"]))
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Giriş</title>
+    <title>Main Page</title>
     <link rel="shortcut icon" type="x-icon" href="icons\homeicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -33,7 +33,7 @@ if (isset($_POST["admin"]))
     <div class="container p-5">
         <div class="card p-5">
             <form action="index.php" method="POST">
-            <h1>Hoşgeldiniz</h1>
+            <h1>Welcome</h1>
 
             <div class="col-md-12 text-center">
                 <button type="submit" name= "signin" class="button button-green ">Sign In</button>

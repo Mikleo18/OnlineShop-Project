@@ -85,7 +85,7 @@ if(isset($_POST["sil"]))
                
 
                 <div>
-                    <label for="exampleInputEmail1" class="form-label">Ürün Id:</label>
+                    <label for="exampleInputEmail1" class="form-label">Product Id:</label>
                     <input type="number" class="form-control       <?php 
                     if (!empty($urunfiyati_err))
                     {
@@ -101,8 +101,8 @@ if(isset($_POST["sil"]))
 
             
 
-                <button type="submit" name= "sil" class ="buttonred">Sil</button>
-                <button type="submit" name= "geri" class ="button button-red">Geri Dön</button>
+                <button type="submit" name= "sil" class ="buttonred">Delete</button>
+                <button type="submit" name= "geri" class ="button button-red">Go Back</button>
             </form>
             <?php if($olmus): ?>
                 <div class="alert alert-success mt-3" role="alert">

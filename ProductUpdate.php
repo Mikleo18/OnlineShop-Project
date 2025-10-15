@@ -111,7 +111,7 @@ if(isset($_POST["ekle"]))
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ürün Güncelle</title>
+    <title>Product Update</title>
     <link rel="shortcut icon" type="x-icon" href="icons\packicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -122,7 +122,7 @@ if(isset($_POST["ekle"]))
             <form action="ProductUpdate.php" method="POST" class="form-container">
 
             <div>
-                    <label for="exampleInputEmail1" class="form-label">Ürün Id:</label>
+                    <label for="exampleInputEmail1" class="form-label">Product Id:</label>
                     <input type="number" class="form-control       <?php 
                     if (!empty($urunfiyati_err))
                     {
@@ -137,7 +137,7 @@ if(isset($_POST["ekle"]))
                 </div>
 
                 <div>
-                    <label for="exampleInputEmail1" class="form-label">Ürün ismi:</label>
+                    <label for="exampleInputEmail1" class="form-label">Product Name:</label>
                     <input type="text" class="form-control       <?php 
                     if (!empty($urunismi_err))
                     {
@@ -153,7 +153,7 @@ if(isset($_POST["ekle"]))
                 </div>
 
                 <div>
-                    <label for="exampleInputEmail1" class="form-label">Ürün Fiyatı:</label>
+                    <label for="exampleInputEmail1" class="form-label">Product Price:</label>
                     <input type="number" class="form-control       <?php 
                     if (!empty($urunfiyati_err))
                     {
@@ -168,7 +168,7 @@ if(isset($_POST["ekle"]))
                 </div>
 
                 <div>
-                    <label for="exampleInputPassword1" class="form-label">Ürün Sayısı:</label>
+                    <label for="exampleInputPassword1" class="form-label">Product Quantity:</label>
                     <input type="number" class="form-control       <?php 
                     if ( !empty($urunsayisi_err))
                     {
@@ -182,8 +182,8 @@ if(isset($_POST["ekle"]))
                     </div>
                 </div>
 
-                <button type="submit" name= "ekle" class ="buttongreen">Güncelle</button>
-                <button type="submit" name= "geri" class ="button button-red">Geri Dön</button>
+                <button type="submit" name= "ekle" class ="buttongreen">Update</button>
+                <button type="submit" name= "geri" class ="button button-red">Go Back</button>
             </form>
             <?php if($olmus): ?>
                 <div class="alert alert-success mt-3" role="alert">
