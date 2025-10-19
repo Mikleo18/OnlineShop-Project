@@ -40,7 +40,7 @@ if(isset($_POST["geri"]))
     <div class="container p-5">
         <div class="card p-5">
             <form action="adminpanel.php" method="POST">
-            <h1>Welcome</h1>
+            <h1>Welcome Admin</h1>
 
             <div class="col-md-12 text-center">
                 <button type="submit" name= "ekle" class="button button-green ">Add Product </button>
