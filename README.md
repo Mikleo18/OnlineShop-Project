@@ -21,7 +21,7 @@ The admin panel allows adding, deleting, and updating products.
 ## Built With
 
 
-- [![HTML](https://shields.io/badge/HTML-f06529?logo=html5&logoColor=white&labelColor=f06529)](https://www.w3schools.com/html)
+- [![HTML](https://shields.io/badge/HTML-f06529?logo=html5&logoColor=white&labelColor=f06529)](#)
 - [![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff)](#)
 - [![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white)](#)
 - [![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff)](#)
