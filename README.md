@@ -33,7 +33,7 @@ The admin panel allows adding, deleting, and updating products.
 
 
 ```bash 
-git clone https://github.com/kullaniciadi/OnlineShop-Project.git
+git clone https://github.com/Mikleo18/OnlineShop-Project.git
 ```
 - To set up the project, open XAMPP and import the included .sql file into a new database named "shop" using phpMyAdmin.
 
